@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/mystyle.css'%}" />
+    <title>User Information</title>
+  </head>
+  <body>
+    <h1>This is a User Information Page</h1>
+    <ol class="ass" start="1">
+      {% if users %} {% for user in users %}
+      <li>User Info</li>
+      <ul style="list-style-type: circle">
+        <li>First Name: {{ user.first_name}}</li>
+        <li>Last Name: {{ user.last_name}}</li>
+        <li>Email: {{ user.email}}</li>
+      </ul>
+      {% endfor %} {% endif %}
+    </ol>
+  </body>
+</html>

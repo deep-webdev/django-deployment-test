@@ -1,0 +1,27 @@
+img {
+  height: 200px;
+  width: 200px;
+}
+h1 {
+  font-weight: 800;
+  color: brown;
+}
+.table {
+  border: 2px solid black;
+}
+
+table,
+th,
+td {
+  border: solid 1px black;
+  text-align: center;
+  padding: 5px;
+}
+.ass {
+  color: darkslateblue;
+  margin-left: 50px;
+}
+li {
+  margin: 5px;
+  font-size: 20px;
+}
